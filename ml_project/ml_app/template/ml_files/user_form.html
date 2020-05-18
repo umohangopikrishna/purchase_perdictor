@@ -1,0 +1,16 @@
+{% extends "ml_files/base.html" %}
+
+{% block head_block %}
+<form  method="post">
+<fieldset>
+<legend>PREDICATE DATA:</legend>
+<table>
+{{form.as_table}}
+{% csrf_token %}
+</table>
+<input type="submit" name="" value="submit">
+</fieldset>
+
+  </form>
+
+{% endblock %}
